@@ -2,9 +2,9 @@
   "name": "codetest",
   "version": "0.2.5",
   "description": "Code Test for crowdlinker front end developer",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "2.4.1",

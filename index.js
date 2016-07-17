@@ -18,6 +18,7 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
+
 ////running locally
 //app.listen(3000);
 //console.log('running at 3000');
