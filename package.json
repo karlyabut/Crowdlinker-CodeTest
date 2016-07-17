@@ -1,13 +1,10 @@
 {
-  "name": "node-js-getting-started",
+  "name": "codetest",
   "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "5.9.1"
-  },
-  "main": "index.js",
+  "description": "Code Test for crowdlinker front end developer",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "ejs": "2.4.1",
