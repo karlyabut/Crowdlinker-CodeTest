@@ -1,0 +1,22 @@
+.navbar-default{
+    background-color: white;
+    border-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p{
+    font-size: 40px;
+}
+sup{
+    font-size: 25%;
+    position: relative;
+    top: -14px;
+}
+.btn{
+    color: grey;
+    width: 120%;
+    border-color: #AED6F1;
+    position: relative;
+    top: 5px;
+}
