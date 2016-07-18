@@ -1,11 +1,22 @@
+
 .navbarFooter{
-    background-color: dimgray;
-    color: #B2BABB;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: gray;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.navbarFooter .navbar-nav > li > a {
+    color: #e7e7e7;
+}
+.navbar-nav{
+    display: inline-block;
+    float: none;
+}
+.navbar-collapse{
+    text-align: center;
 }
 .copyright{
-    font-size: 12px;
+    font-size: 12px;   
+    color: #e7e7e7;
     position: relative;
-    top: 15px;
+    top: 20px;
 }
