@@ -7,20 +7,19 @@
     padding-bottom: 10px;
 }
 .jumbotron > p{
+    color: dimgray;
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
 }
 .jumbotron > h3{
+    color: dimgray;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 20px;
 }
-.row{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-}
+
 #parPersonal{
     font-size: 1.2em;
+    color: grey;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
 }
@@ -29,6 +28,7 @@
     color: #7dc855;
 }
 #personalDesc{
+    color: gray;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,9 +37,39 @@
     position: relative;
     top: -14px;
 }
+#emailInput{
+    padding-left: 475px;
+    padding-right: 475px;
+    padding-top: 0px;
+}
+#emailTxt{
+    height: 50px;
+    border-color: #AED6F1;
+    border-left-color: white;
+}
+.input-group-addon{
+    border-color: #AED6F1;
+    background-color: white;
+    border-right-color: white;
+}
+.grey{
+    color: grey;
+}
 /* Grid */
+.row{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 120px;
+}
+.col-md-4{
+    box-shadow: 2px 1px 1px grey;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-radius: 0.5em;
+}
 .table{
-    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Buttons */
@@ -73,4 +103,10 @@
     color: white;
     background-color: #7dc855;
     border-color: #7dc855;
+}
+#btn5{
+    color: white;
+    background-color: #7dc855;
+    border-color: #7dc855;
+    height: 50px;
 }

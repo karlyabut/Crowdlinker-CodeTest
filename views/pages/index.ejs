@@ -49,18 +49,18 @@
 Comment script goes here..
 
 -->
-
+<!-- Grid -->
 <div class="jumbotron text-center">
   <h1>Choose Your License</h1>
 </div>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
+  <div class="col-xs-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3 align="center">Personal</h3>
+        <h2 align="center">Personal</h2>
         <p id="parPersonal" align="center">Just started using awesome Module.<br>Great way to boost the hard designing<br>or prototyping process.</p>
-          <table class="table">
+          <table class="table" align="center">
             <tr>
               <td><h1 id="freeTxt">Free</h1></td>
               <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
@@ -71,11 +71,11 @@ Comment script goes here..
     </div>
   </div>
 
-  <div class="col-sm-6 col-md-4">
+  <div class="col-xs-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3 align="center">Agency</h3>
-        <p id="parPersonal" align="center">Also a perfect tool for creative studios<br> and freelancers</p>
+        <h2 align="center">Agency</h2>
+        <p id="parPersonal" align="center">Also a perfect tool for creative studios<br> and freelancers<br><br></p>
           <table class="table">
             <tr>
               <td><h1><sup id="supDollar">$</sup>123</h1></td>
@@ -87,14 +87,14 @@ Comment script goes here..
     </div>
   </div>
 
-  <div class="col-sm-6 col-md-4">
+  <div class="col-xs-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3 align="center">Personal</h3>
-        <p id="parPersonal" align="center">Living in today's metropolitan world of<br>cellular phones, mobile computers</p>
+        <h2 align="center">Unlimited</h2>
+        <p id="parPersonal" align="center">Living in today's metropolitan world of<br>cellular phones, mobile computers<br><br></p>
           <table class="table">
             <tr>
-              <td><h1 id="freeTxt">Free</h1></td>
+              <td><h1><sup id="supDollar">$</sup>232</h1></td>
               <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
             </tr>
           </table>
@@ -102,9 +102,20 @@ Comment script goes here..
       </div>
     </div>
   </div>
-
-
-  
+</div>
+<!-- email -->
+<div class="jumbotron text-center">
+  <h1>Become One of Us</h1>
+  <p>Module 01 is big, stylish and handy UI Kit, full of<br>many useful elements</p>
+    <div class="input-group" id="emailInput">
+      <span class="input-group-addon">
+        <i class="glyphicon glyphicon-send grey"></i>
+      </span>
+      <input type="text" id="emailTxt" class="form-control" placeholder="E-mail address"/>
+        <span class="input-group-btn">
+          <button class="btn btn-default" id="btn5" type="button">Let's chat</button>
+        </span>
+    </div>
 </div>
 
 <% include ../partials/footer %>
