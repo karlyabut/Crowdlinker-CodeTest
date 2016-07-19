@@ -13,7 +13,7 @@ sup{
     position: relative;
     top: -14px;
 }
-.btn{
+#btn{
     color: grey;
     width: 120%;
     border-color: #AED6F1;

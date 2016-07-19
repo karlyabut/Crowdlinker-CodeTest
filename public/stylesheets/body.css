@@ -1,3 +1,6 @@
+.jumbotron{
+    background: white;
+}
 .jumbotron > h1{
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,13 +10,66 @@
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
 }
+.jumbotron > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+.row{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+#parPersonal{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+#freeTxt{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7dc855;
+}
+#personalDesc{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#supDollar{
+    font-size: 50%;
+    position: relative;
+    top: -14px;
+}
+/* Grid */
+.table{
+    padding: 100px;
+}
+
+/* Buttons */
+
 #btn1{
+    border-color: #AED6F1;
+    color: grey;
+    position: relative;
     width: 10em;
     height: 3.5em;
 }
 #btn2{
     width: 10em;
     height: 3.5em;
+    color: white;
+    background-color: #7dc855;
+    border-color: #7dc855;
+}
+#btn3{
+    border: none;
+    background: none;
+}
+#btn3:after{
+    font-family: "Glyphicons Halflings";
+    content: "\e113";
+}
+#btn3.collapsed:after{
+    content: "\e114";
+}
+#btn4{
     color: white;
     background-color: #7dc855;
     border-color: #7dc855;

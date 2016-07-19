@@ -17,20 +17,94 @@
   <h1>Share your Files with Ease</h1>
   <p>We push ourselves to new levels of inspired excellence with each<br> project and we sweat creativity.</p>
 </div>
-<form class="navbar-form">
-  <div class="container" align="center">
-    <button type="button" class="btn btn-default" id="btn1">Buy now | &euro;23</button>
-  </div>
-</form>
+
+    <!-- Button 1 -->
+  <form class="navbar-form">
+    <div class="container" align="center">
+      <button type="button" class="btn btn-default" id="btn1">Buy now | &euro;23</button>
+   </div>
+  </form>
 
 <div class="jumbotron text-center">
   <h3>We push ourselves to new levels of inspired excellence with each<br> project and we sweat creativity. You won't see anything until we're<br> done drooling at the result.</h3>
 
-<form class="navbar-form">
-  <div class="container" align="center">
-    <button type="button" class="btn btn-default" id="btn2">Buy now for &euro;23</button>
+    <!-- Button 2 -->
+  <form class="navbar-form">
+   <div class="container" align="center">
+      <button type="button" class="btn btn-default" id="btn2">Buy now for &euro;23</button>
+   </div>
+  </form>
+</div>
+<div class="container" align="center">
+  <div id="showMore" class="collapse">
+    more.....
   </div>
-</form>
+    <!-- Button 3 -->
+  <button type="button" id="btn3" class="btn btn-default collapsed" data-toggle="collapse" data-target="#showMore">
+  </button>
+</div>
+
+<!--
+
+Comment script goes here..
+
+-->
+
+<div class="jumbotron text-center">
+  <h1>Choose Your License</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3 align="center">Personal</h3>
+        <p id="parPersonal" align="center">Just started using awesome Module.<br>Great way to boost the hard designing<br>or prototyping process.</p>
+          <table class="table">
+            <tr>
+              <td><h1 id="freeTxt">Free</h1></td>
+              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+            </tr>
+          </table>
+             <button type="button" id="btn4" class="btn btn-default">Get it</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3 align="center">Agency</h3>
+        <p id="parPersonal" align="center">Also a perfect tool for creative studios<br> and freelancers</p>
+          <table class="table">
+            <tr>
+              <td><h1><sup id="supDollar">$</sup>123</h1></td>
+              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+            </tr>
+          </table>
+             <button type="button" id="btn4" class="btn btn-default">Get it</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3 align="center">Personal</h3>
+        <p id="parPersonal" align="center">Living in today's metropolitan world of<br>cellular phones, mobile computers</p>
+          <table class="table">
+            <tr>
+              <td><h1 id="freeTxt">Free</h1></td>
+              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+            </tr>
+          </table>
+             <button type="button" id="btn4" class="btn btn-default">Get it</button>
+      </div>
+    </div>
+  </div>
+
+
+  
 </div>
 
 <% include ../partials/footer %>
