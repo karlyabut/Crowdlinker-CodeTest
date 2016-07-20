@@ -8,8 +8,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300' rel='stylesheet' type='text/css'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script language="JavaScript">
+  function displayLineChart() {
+    var data = {
+        labels: ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+        datasets: [
+            {
+                label: "Prime and Fibonacci",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [509, 435, 400, 365, 288, 326, 389, 425, 187, 501]
+            }
+        ]
+    };
+    var ctx = document.getElementById("lineChart").getContext("2d");
+    var options = { };
+    var lineChart = new Chart(ctx).Line(data, options);
+  }
+</script>
 </head>
-<body>
+<body onload="displayLineChart()">
 <% include ../partials/header %>
 <link rel="stylesheet" type="text/css" href="/stylesheets/body.css">
 
@@ -24,6 +48,14 @@
       <button type="button" class="btn btn-default" id="btn1">Buy now | &euro;23</button>
    </div>
   </form>
+
+  <!-- chart here! -->
+
+<div align="center">
+
+  <canvas id="lineChart" width="1000" height="400"></canvas>
+
+</div>
 
 <div class="jumbotron text-center">
   <h3>We push ourselves to new levels of inspired excellence with each<br> project and we sweat creativity. You won't see anything until we're<br> done drooling at the result.</h3>
@@ -80,6 +112,7 @@ Comment script goes here..
     </div>
 
   <div class="col-sm-4">
+
         <h2 align="center">Personal</h2>
         <p id="parPersonal" align="center">Just started using awesome Module.<br>Great way to boost the hard designing<br>or prototyping process.</p>
           <table class="table">
@@ -91,6 +124,7 @@ Comment script goes here..
           <div id="btnMid">
              <button type="button" id="btn4" class="btn btn-default">Get it</button>
           </div>
+
   </div>
 
   <div class="col-sm-4">
@@ -108,7 +142,6 @@ Comment script goes here..
   </div>
 
   <div class="col-sm-4">
-
         <h2 align="center">Unlimited</h2>
         <p id="parPersonal" align="center">Living in today's metropolitan world of<br>cellular phones, mobile computers<br><br></p>
           <table class="table">
