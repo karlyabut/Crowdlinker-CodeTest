@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <% include ../partials/header %>
@@ -50,52 +50,49 @@ Comment script goes here..
 
 -->
 <!-- Grid -->
-<div class="jumbotron text-center">
-  <h1>Choose Your License</h1>
+<div class="container">
+  <div class="row">
+<div class="col-xs-12">
+  <h1 id="license" class="text-center">Choose Your License</h1>
 </div>
 
-<div class="row">
-  <div class="col-xs-6 col-md-4">
-    <div class="thumbnail">
+  <div class="col-sm-4">
       <div class="caption">
         <h2 align="center">Personal</h2>
         <p id="parPersonal" align="center">Just started using awesome Module.<br>Great way to boost the hard designing<br>or prototyping process.</p>
-          <table class="table" align="center">
+          <table class="table">
             <tr>
               <td><h1 id="freeTxt">Free</h1></td>
-              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+              <td><p id="bill">Per month billed annualy<br>or $250 from month to<br>month
             </tr>
           </table>
              <button type="button" id="btn4" class="btn btn-default">Get it</button>
       </div>
-    </div>
   </div>
 
-  <div class="col-xs-6 col-md-4">
-    <div class="thumbnail">
+  <div class="col-sm-4">
       <div class="caption">
         <h2 align="center">Agency</h2>
         <p id="parPersonal" align="center">Also a perfect tool for creative studios<br> and freelancers<br><br></p>
           <table class="table">
             <tr>
-              <td><h1><sup id="supDollar">$</sup>123</h1></td>
-              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+              <td><h1 id="agency"><sup id="supDollar">$</sup>123</h1></td>
+              <td><p id="bill">Per month billed annualy<br>or $250 from month to<br>month
             </tr>
           </table>
              <button type="button" id="btn4" class="btn btn-default">Get it</button>
       </div>
-    </div>
   </div>
 
-  <div class="col-xs-6 col-md-4">
-    <div class="thumbnail">
+  <div class="col-sm-4">
+
       <div class="caption">
         <h2 align="center">Unlimited</h2>
         <p id="parPersonal" align="center">Living in today's metropolitan world of<br>cellular phones, mobile computers<br><br></p>
           <table class="table">
             <tr>
-              <td><h1><sup id="supDollar">$</sup>232</h1></td>
-              <td><p id="personalDesc">Per month billed annualy<br>or $250 from month to<br>month
+              <td><h1 id="unlimited"><sup id="supDollar">$</sup>232</h1></td>
+              <td><p id="bill">Per month billed annualy<br>or $250 from month to<br>month
             </tr>
           </table>
              <button type="button" id="btn4" class="btn btn-default">Get it</button>
@@ -103,18 +100,25 @@ Comment script goes here..
     </div>
   </div>
 </div>
+
 <!-- email -->
-<div class="jumbotron text-center">
-  <h1>Become One of Us</h1>
-  <p>Module 01 is big, stylish and handy UI Kit, full of<br>many useful elements</p>
-    <div class="input-group" id="emailInput">
-      <span class="input-group-addon">
-        <i class="glyphicon glyphicon-send grey"></i>
-      </span>
-      <input type="text" id="emailTxt" class="form-control" placeholder="E-mail address"/>
-        <span class="input-group-btn">
-          <button class="btn btn-default" id="btn5" type="button">Let's chat</button>
-        </span>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 id="oneofus" class="text-center">Become One of Us</h1>
+    </div>
+  <p id="moduleTxt" class="text-center">Module 01 is big, stylish and handy UI Kit, full of<br>many useful elements</p>
+      <div class="col-sm-6">
+        <div class="input-group" id="emailInput">
+          <span class="input-group-addon">
+           <i class="glyphicon glyphicon-send grey"></i>
+         </span>
+         <input type="text" id="emailTxt" class="form-control" placeholder="E-mail address"/>
+           <span class="input-group-btn">
+             <button class="btn btn-default" id="btn5" type="button">Let's chat</button>
+            </span>
+        </div>
+      </div>
     </div>
 </div>
 
