@@ -16,20 +16,25 @@
         labels: ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
         datasets: [
             {
-                label: "Prime and Fibonacci",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                label: "Chart Attempt",
+                fillColor: "rgba(255,255,255,1)",
+                strokeColor: "rgba(174,214,241,1)",
+                pointColor: "rgba(174,214,241,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
+                pointHighlightStroke: "rgba(174,214,241,1)",
                 data: [509, 435, 400, 365, 288, 326, 389, 425, 187, 501]
             }
         ]
     };
     var ctx = document.getElementById("lineChart").getContext("2d");
-    var options = { };
-    var lineChart = new Chart(ctx).Line(data, options);
+
+    var lineChart = new Chart(ctx).Line(data, {
+      pointDotRadius: 10,
+      bezierCurve: false,
+      scaleShowVerticalLines: false,
+      ScaleGridLineColor: "black"
+    });
   }
 </script>
 </head>
@@ -87,20 +92,49 @@ Comment script goes here..
   <div id="next" class="collapse">
     <h3 id="feedbackNext">Next...</h3>
   </div>
-
     <button type="button" id="btnRight" class="btn btn-default collapsed" date-toggle="collapse" data-target="#next">
     </button>
 </div>
 -->
+<script>
+$(document).ready(function(){
+  $("#btnNext").click(function(){
+    $("td").toggle(); 
+  });
+  $("#btnPrev").click(function(){
+    $("td").toggle(); 
+  });
+  
+});
+</script>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h3 id="feedback">"Just started using awesome Module. Great way to boost the hard<br>designing or prototyping process. Also a perfect tool for creative<br>studios and freelancers"</h3>
-      <p id="name">Irina Bykova</p>
-      <p id="job">Photographer, works with Slack team</p>
-    </div>
-  </div>
+<div>
+  <table align="center">
+    <tr>
+      <td>
+        <!-- Button Previous -->
+          <button type="button" id="btnPrev" class="btn btn-default glyphicon glyphicon-menu-left grey">
+          </button>
+      </td>
+      <td class="feedbackContent">
+          <h3 id="feedback">"Just started using awesome Module. Great way to boost the hard<br>designing or prototyping process. Also a perfect tool for creative<br>studios and freelancers"</h3>
+          <p id="name">Irina Bykova</p>
+          <p id="job">Photographer, works with Slack team</p>
+      </td>
+      <td class="feedbackContentNext">
+          <h3 id="feedback">"Really Exciting stuff!!!"</h3>
+          <p id="name">Karl Eisen Yabut</p>
+          <p id="job">YES!</p>
+      </td>
+      
+      <td align="center">
+    <!-- Button next -->
+          <button type="button" id="btnNext" class="btn btn-default glyphicon glyphicon-menu-right grey">
+          </button>
+
+      </td>
+    </tr>
+  </table>
 </div>
 
 

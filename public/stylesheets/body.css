@@ -22,9 +22,15 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
+/* Chart attempt*/
+#lineChart{
+    padding-bottom: 100px;
+}
+/*------------------*/
 #feedback, #name, #job{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    text-align: left
 }
 #feedback{
     padding-top: 50px;
@@ -40,6 +46,21 @@ h2{
     padding-bottom: 100px;
     line-height: 70%;
     color: grey;
+}
+
+.feedbackContentNext{
+    display: none;
+}
+#btnPrev, #btnNext{
+    border: none;
+    background: none;
+}
+#btnPrev{
+    padding-right: 50px;
+}
+
+#btnNext{
+    padding-left: 50px;
 }
 
 #parPersonal{
@@ -61,6 +82,7 @@ h2{
 }
 #license{
     font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
     padding-bottom: 50px;
     font-size: 3em;
     font-weight: 300;
@@ -84,6 +106,7 @@ h2{
 }
 #oneofus{
     font-family: 'Roboto', sans-serif;
+    padding-top: 150px;
     font-size: 3em;
     font-weight: 200;
 }
@@ -107,7 +130,7 @@ h2{
     border-right-color: white;
 }
 .grey{
-    color: grey;
+    color: #e5e8e8;
 }
 /* Grid */
 .row{
@@ -115,7 +138,7 @@ h2{
     margin-left: -20px;
 } 
 .col-sm-4{
-    box-shadow: 2px 1px 1px #e5e8e8;
+    box-shadow: 2px 1px 1px #e3e3e3;
     border-radius: 0.5em;
     overflow: hidden;
 }
@@ -129,17 +152,33 @@ h2{
 
 #btn1{
     font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border-color: #AED6F1;
     color: grey;
     width: 10em;
     height: 3.5em;
 }
+#btn1:hover{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #AED6F1;
+    border-color: #AED6F1;
+}
 #btn2{
     font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     width: 10em;
     height: 3.5em;
     color: white;
     background-color: #7dc855;
+    border-color: #7dc855;
+}
+#btn2:hover{
+    color: dimgray;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
     border-color: #7dc855;
 }
 #btn3{
@@ -153,13 +192,27 @@ h2{
 #btn3.collapsed:after{
     content: "\e114";
 }
+
+#btnNext{
+    font-family: "Glyphicons Halflings";
+    content: "\e113";
+}
+
 #btn4{
     color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     font-family: 'Roboto', sans-serif;
     background-color: #7dc855;
     border-color: #7dc855;
     width: 17em;
     height: 3.5em;
+}
+#btn4:hover{
+    color: dimgray;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-color: #7dc855;
 }
 #btnMid{
     text-align: center;
@@ -167,9 +220,17 @@ h2{
 }
 #btn5{
     color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     background-color: #7dc855;
     border-color: #7dc855;
     height: 50px;
+}
+#btn5:hover{
+    color: dimgray;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-color: #7dc855;
 }
 #btnRight:after{
     font-family: "Glyphicons Halflings";
